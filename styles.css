@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+
+    /* Removes default margin and padding applied by other browsers */
+    font-family: Georgia, Times, 'Times New Roman', serif;
+
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(assets/La\ Push\ First\ Beach.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/*this is at the top of the page*/
+header {
+    display: flex;
+    /*  Tells header it is a flex container */
+    justify-content: space-evenly;
+    /*  evenly spaces child elements inside the container */
+    align-items: center;
+    /*  Vertically center the child elements inside the container */
+    color: whitesmoke;
+    /* font color  */
+    /* padding: 20px; */
+    /*  padding INSIDE the header to create space around the content */
+    width: 100%;
+    /* makes sure the header spans the entire width of the screen */
+    margin: 0 auto;
+    /* centers header horizontally on the page */
+    flex-wrap: wrap;
+    /* makes sure that the child elements wrap onto a new line if there isn't enough space*/
+    background-color: rgb(117, 135, 155);
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    /* limits the width for better readability */
+    text-align: center;
+    /* aligns text to the left, right, center */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(94, 101, 119);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    line-height: 2;
+    font-size: 20px;
+    color: whitesmoke;
+    gap: 2rem;
+}
+
+/*Styling for entire Main Element*/
+main {
+    display: flex;
+    /*  Tells Main it is a flex container */
+    flex-direction: column;
+    /*Stacks child elements (sections) vertically in a column */
+    align-items: center;
+    /* Aline child elements horizontally in the center */
+    padding: 30px;
+    /* adds padding AROUND the main content for better spacing */
+}
+
+/* Styling for the Section Elements */
+section {
+    border-radius: 8px;
+    /*adds rounded corners to section */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    /*box shadow making it "float"*/
+    padding: 20px;
+    /*adds space INSIDE each section "card"*/
+    margin-bottom: 20px;
+    /* adds space at the BOTTOM of each "card */
+    width: 100%;
+    /*makes the section take up the full width of the MAIN container*/
+    max-width: 800px;
+    /* limits the width to a MAX of 800px */
+    line-height: 2;
+    background-color: rgba(117, 135, 155, 0.75);
+    color: whitesmoke;
+}
+
+.bookSection {
+    display: inline-flex;
+    list-style-type: none;
+    /* Remove bullets */
+    align-items: center;
+}
+
+.bookDescription {
+    padding-left: 20px;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.bookImage {
+    align-items: center;
+}
+
+dl {
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 15px;
+    /*Add space between EACH list item */
+}
+
+/* .centerHeader {
+    text-align: center;
+}
+
+/* .skillsSection {
+    background-color: lightseagreen;
+}
+
+.Skills {
+    border: dashed hotpink 3px;
+    width: fit-content;
+    padding: 5px;
+} */
+
+footer {
+    background-color: rgb(117, 135, 155);
+    height: 100px;
+    font-size: 20px;
+    /* text-align: center; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
