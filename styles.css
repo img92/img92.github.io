@@ -1,50 +1,41 @@
+/* Global Styles */
 body {
-    margin: 0;
-
-    /* Removes default margin and padding applied by other browsers */
-    font-family: Georgia, Times, 'Times New Roman', serif;
-
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(assets/La\ Push\ First\ Beach.jpg) no-repeat center center fixed;
-    background-size: cover;
+    margin: 0; /* Removes default margin */
+    font-family: "Spectral", serif; /* Sets page font */
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+        url(assets/filip-zrnzevic-QsWG0kjPQRY-unsplash\ \(1\).jpg) no-repeat center center fixed;
+    background-size: cover; /* Ensures background covers viewport */
 }
 
-/*this is at the top of the page*/
+/* Header Styling */
 header {
     display: flex;
-    /*  Tells header it is a flex container */
     justify-content: space-evenly;
-    /*  evenly spaces child elements inside the container */
     align-items: center;
-    /*  Vertically center the child elements inside the container */
+    text-align: center;
     color: whitesmoke;
-    /* font color  */
-    /* padding: 20px; */
-    /*  padding INSIDE the header to create space around the content */
     width: 100%;
-    /* makes sure the header spans the entire width of the screen */
     margin: 0 auto;
-    /* centers header horizontally on the page */
     flex-wrap: wrap;
-    /* makes sure that the child elements wrap onto a new line if there isn't enough space*/
-    background-color: rgb(117, 135, 155);
+    background-color: rgb(39, 77, 67);
 }
 
+/* Intro Section */
 .intro {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 500px;
-    /* limits the width for better readability */
     text-align: center;
-    /* aligns text to the left, right, center */
 }
 
+/* Navigation Bar */
 .nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    background-color: rgb(94, 101, 119);
+    background-color: rgb(26, 53, 46);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     line-height: 2;
     font-size: 20px;
@@ -52,88 +43,128 @@ header {
     gap: 2rem;
 }
 
-/*Styling for entire Main Element*/
+/* Main Container */
 main {
     display: flex;
-    /*  Tells Main it is a flex container */
     flex-direction: column;
-    /*Stacks child elements (sections) vertically in a column */
     align-items: center;
-    /* Aline child elements horizontally in the center */
     padding: 30px;
-    /* adds padding AROUND the main content for better spacing */
 }
 
-/* Styling for the Section Elements */
+/* Section Styling */
 section {
-    border-radius: 8px;
-    /*adds rounded corners to section */
+    border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    /*box shadow making it "float"*/
     padding: 20px;
-    /*adds space INSIDE each section "card"*/
-    margin-bottom: 20px;
-    /* adds space at the BOTTOM of each "card */
-    width: 100%;
-    /*makes the section take up the full width of the MAIN container*/
-    max-width: 800px;
-    /* limits the width to a MAX of 800px */
-    line-height: 2;
-    background-color: rgba(117, 135, 155, 0.75);
-    color: whitesmoke;
-}
-
-.bookSection {
     display: inline-flex;
-    list-style-type: none;
-    /* Remove bullets */
-    align-items: center;
+    margin: 20px;
+    width: 100%;
+    max-width: 1000px;
+    background-color: rgba(39, 77, 67, 0.75);
+    color: whitesmoke;
+    list-style: none;
+    line-height: 2rem;
 }
 
-.bookDescription {
+/* Reread and Rewatch Container */
+.rereadAndRewatch {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    gap: 20px;
+}
+
+/* Column Styling */
+.column {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Reread Section */
+.rereadRewatch {
+    display: inline;
+}
+
+.rereadRewatchTitle{
+    text-align: center;
+}
+
+.book{
+    margin-left: 1rem;
+    display: inline-flex;
+    text-align: left;
+}
+
+.rereadRewatchImage{
+    margin-left: 2rem;
+    margin-right: 1rem;
+    padding: 1rem; /* Space around images */
+}
+
+/* Styling for date section */
+.dates {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Book and Movie Section Styling */
+.bookImage, .moviePoster {
+    padding: 1rem; /* Space around images */
+}
+
+.bookDescription, .movieDetails {
     padding-left: 20px;
-    align-items: center;
-    line-height: 1.5;
+    margin-right: 15px;
+    line-height: 1; /* Tighter line height for descriptions */
 }
 
-.bookImage {
-    align-items: center;
+/* Movie-specific styling */
+.movieTitle {
+    margin-bottom: 3px;
 }
 
+.movieInfo {
+    line-height: 3px;
+    margin-bottom: 2rem;
+}
+
+.ratings {
+    margin-bottom: 20px;
+}
+
+/* Description List */
 dl {
     margin-left: 20px;
 }
 
+/* List Items */
 li {
-    margin-bottom: 15px;
-    /*Add space between EACH list item */
+    margin-bottom: 1rem;
+    list-style-type: none; /* Removes bullets or numbers from the list */
 }
 
-/* .centerHeader {
-    text-align: center;
-}
-
-/* .skillsSection {
-    background-color: lightseagreen;
-}
-
-.Skills {
-    border: dashed hotpink 3px;
-    width: fit-content;
-    padding: 5px;
-} */
-
+/* Footer Styling */
 footer {
-    background-color: rgb(117, 135, 155);
+    background-color: rgb(39, 77, 67);
     height: 100px;
     font-size: 20px;
-    /* text-align: center; */
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
+/* Links */
 a {
     text-decoration: none;
     color: whitesmoke;
+    display: flex;
+    line-height: 1.5;
+    align-items: center;
+}
+
+/* Images */
+img {
+    border-radius: 2px;
 }
