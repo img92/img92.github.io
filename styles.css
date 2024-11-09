@@ -3,7 +3,7 @@ body {
     margin: 0; /* Removes default margin */
     font-family: "Spectral", serif; /* Sets page font */
     background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
-        url(assets/filip-zrnzevic-QsWG0kjPQRY-unsplash\ \(1\).jpg) no-repeat center center fixed;
+        url(assets/lilacForest\(1\).jpg) no-repeat center center fixed;
     background-size: cover; /* Ensures background covers viewport */
 }
 
@@ -54,7 +54,7 @@ main {
 /* Section Styling */
 section {
     border-radius: 5px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.);
     padding: 20px;
     display: inline-flex;
     margin: 20px;
@@ -88,6 +88,9 @@ section {
 
 .rereadRewatchTitle{
     text-align: center;
+    background-color: rgb(26, 53, 46,.75);
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .book{
@@ -99,20 +102,38 @@ section {
 .rereadRewatchImage{
     margin-left: 2rem;
     margin-right: 1rem;
-    padding: 1rem; /* Space around images */
+    padding: 1rem; 
+    /* Space around images */
 }
 
 /* Styling for date section */
 .dates {
     font-size: 1.2rem;
-    margin-bottom: 20px;
     font-weight: bold;
+    background-color: rgb(26, 53, 46,.75);
+    /* border-radius: 3px; */
+    padding: 2px;
+    text-align: center;
+}
+
+.schedule{
+    border: 2px solid rgb(26, 53, 46,.75); /* Set border width, style, and color */
+    border-radius: 5px;     /* Optional: round the corners */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bookSection{
+    border: 1px solid rgb(26, 53, 46,.75); /* Set border width, style, and color */
+    border-radius: 5px;     /* Optional: round the corners */
 }
 
 /* Book and Movie Section Styling */
-.bookImage, .moviePoster {
-    padding: 1rem; /* Space around images */
-}
+/* .bookImage, .moviePoster {
+    padding: 1rem; 
+    /* Space around images */
+    /* border-radius: 2px; 
+} */
 
 .bookDescription, .movieDetails {
     padding-left: 20px;
